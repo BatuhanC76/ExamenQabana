@@ -1,0 +1,2316 @@
+@font-face {
+  font-family: Gothamlight;
+  src: url("../font/GothamNarrow-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Gothambold;
+  src: url("../font/GothamNarrow-Bold.otf");
+}
+
+
+@font-face {
+  font-family: GothamMedium;
+  src: url("../font/GothamNarrow-Medium.otf");
+}
+
+@font-face {
+  font-family: Gothamthin;
+  src: url("../font/GothamNarrow-Thin.otf");
+}
+
+* {
+  margin: auto;
+  padding: auto;
+  font-style: normal;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #008c9a  url(../Images/Backgroundimage/driehoek-bg.png) no-repeat
+    bottom right;
+}
+
+nav {
+  width: 100%;
+}
+
+header {
+  background-size: 300px;
+  display: block;
+  min-height: 100px;
+  min-width: 100px;
+  margin-bottom: 60px;
+}
+
+h5 {
+  font-size: 2.1em;
+  font-weight: bolder;
+  font-weight: Gothambold;
+}
+
+.Underslider {
+  margin-right: 2.5em;
+  margin-bottom: 1em;
+  margin-top: 3em;
+}
+
+.Underslider p {
+  font-family: Gothamlight;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.Underslider h3 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.UnderNavbar a {
+  color: #dfff00;
+  text-transform: none;
+  border-bottom: 1px solid #dfff00;
+}
+
+.UnderNavbar a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  transition: 0.5s ease;
+}
+
+h4 {
+  font-size: 1.6em;
+  font-weight: Gothamthin;
+  font-weight: 1;
+}
+
+.Stappenplan p {
+  font-family: Gothamlight;
+  font-weight: normal;
+}
+
+#slideshow.note {
+  position: relative;
+  min-height: 100px;
+  max-width: 100%;
+  margin-top: 2em;
+}
+
+.recentInfo {
+  margin-top: 2em;
+}
+
+.recentInfo h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: Gothambold;
+}
+
+a.noline {
+  font-size: 1em;
+  font-family: Gothambold;
+  text-transform: uppercase;
+}
+
+a.noline:hover {
+  color: #f8ef54;
+  border-bottom: 1px solid #f8ef54;
+}
+
+.recentInfo p {
+  font-size: 1.6em;
+}
+
+.recentInfo img {
+  margin: 0.5em;
+}
+
+.recentInfo h2 {
+  font-family: Gothamlight;
+  font-weight: lighter;
+}
+
+.LinkRecent {
+  color: #f8ef54;
+  text-decoration: none;
+  text-transform: none;
+  border-bottom: 1px solid #f8ef54;
+}
+
+.LinkRecent:hover {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.LinkRecent {
+  color: #f8ef54;
+  text-decoration: none;
+  text-transform: none;
+  border-bottom: 1px solid #f8ef54;
+}
+
+.LinkRecent:hover {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.Linkvacture {
+  color: #f8ef54;
+  text-decoration: none;
+  text-transform: none;
+  border-bottom: 1px solid #f8ef54;
+  font-family: GothamMedium;
+
+} 
+
+.Linkvacture:hover {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.navbar-nav .active a::after {
+  border-bottom: 5px solid #5bc0eb;
+  bottom: -10px;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.fa.fa-navicon {
+  color: yellow;
+}
+
+.container {
+  color: #fff;
+}
+
+.Footer h3 {
+  margin-top: 1em;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(248, 239, 95)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='0' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  font-size: 1.3em;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: transparent;
+  background-color: transparent;
+  font-size: 1.4em;
+}
+
+.costom-toggler.navbar-toggler:hover {
+    border-color: transparent;
+  background-color: transparent;
+}
+
+.custom-toggler.navbar-toggler:hover {
+  outline: none;
+}
+
+.Headerlogo {
+  position: absolute;
+  top: 4em;
+}
+
+
+h2 {
+  font-family: Gothamlight;
+  font-weight: 200;
+}
+
+h3 {
+  font-family: Gothambold;
+  font-weight: bolder;
+}
+
+p {
+  font-family: Gothamlight;
+  font-weight: normal;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+.Headerlogo {
+  position: absolute;
+  top: 1em;
+  padding: 2em;
+  height: 12em;
+}
+
+.Footer {
+  clear: both;
+  min-height: 483px;
+  padding: 5px 0;
+  background-color: #000;
+}
+
+footer form input {
+  font-size: 14px;
+  padding: 8px 12px;
+  border: none;
+  width: 500px;
+}
+
+footer form label {
+  min-width: 220px;
+  display: block;
+  float: left;
+}
+
+footer form textarea {
+  font-size: 14px;
+  padding: 8px 12px;
+  border: none;
+  width: 226px;
+}
+
+/* #Gegevens {
+  color: #fff;
+  margin: none;
+  font-family: Gothamlight;
+  float: right;
+  padding: 1em;
+  position: relative;
+  right: 23em;
+  font-size: 1.1em;
+}*/
+
+address a {
+  color: #dfff00;
+  font-family: Gothamlight;
+  border-bottom: #dfff00 1px solid;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+address a:hover {
+  color: #fff;
+  transition: 1s ease-in-out;
+  border-bottom: #fff 1px solid;
+  text-decoration: none;
+  /* -webkit-animation: both; */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.lead {
+  font-size: 1.9em;
+  margin-bottom: 1em;
+}
+
+
+.lead a {
+  text-decoration: none;
+  color: #f8ef54;
+  border-bottom: 1px solid #f8ef54;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.row h1 {
+  color: #fff;
+  font-size: 2.3em;
+  font-family: Gothambold;
+  margin-left: 2em;
+}
+.Texth3 h2 {
+  color: #fff;
+  font-family: Gothamlight;
+  font-size: 2em;
+  font-weight: lighter;
+  margin-left: -4em;
+}
+
+#Current {
+  border-bottom: 3px solid #f8ef54;
+}
+
+.Leftside img {
+  margin: 20px;
+}
+
+.First1 {
+  margin-top: 2em;
+}
+
+.Leftside h6 {
+  margin-top: 2em;
+  font-family: Gothambold;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+
+
+/*  --------------------------------------------------------------------------------------------------------------- */
+  
+
+
+.container-Info h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  position: relative;
+  top: 4em;
+}
+
+.link:hover {
+  color: #fff;
+  transition: 0.5s ease;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+
+.link {
+  color: #f8ef54;
+  border-bottom: 1px solid #f8ef54;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-family: Gothamlight;
+  cursor: pointer;
+}
+
+#backtotop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  text-align: left;
+  line-height: 60px;
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  width: 60px;
+  height: 30px;
+  border-bottom: solid 50px #f8ef54;
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+}
+
+#back-to-top.a {
+  color: yellow;
+}
+#back-to-top:hover {
+  color: rgb(255, 255, 255);
+  border-bottom: solid 50px #f8ef54;
+  transition: 0.5s ease;
+}
+#back-to-top.show {
+  opacity: 1;
+}
+
+.Stagiair {
+  color: #fff;
+  font-size: 15px;
+  font-family: Gothambold;
+}
+
+.Stappenplan h3 {
+  font-size: 1.2em;
+  margin-left: 2em;
+}
+
+.Stappenplan {
+  margin-top: 2em;
+}
+
+
+/*  ----------------------------------------------CONTACT PAGINA-------------------------------------------------- */
+article a {
+  color: #ffff;
+  text-transform: lowercase;
+  font-weight: lighter;
+}
+
+span {
+  display: block;
+}
+
+article a:hover {
+  text-decoration: none;
+  color: #f8ef54;
+}
+
+.infoPersonen h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  position: relative;
+  top: 4em;
+}
+
+article h3 .sub {
+  display: block;
+  font-weight: lighter;
+  text-transform: none;
+  padding-top: 8px;
+  font-family: Gothamlight;
+}
+
+.List a + p {
+  color: yellow;
+}
+
+hr {
+  border-bottom: 1px solid #fff;
+  opacity: 0.5;
+  width: 100%;
+}
+
+address span {
+  display: block;
+}
+
+.Undnav p {
+  font-family: GothamMedium;
+}
+
+.inf-contact a {
+  color: #f8ef54;
+  border-bottom: 1px solid #f8ef54;
+  text-transform: none;
+  font-weight: bold;
+}
+
+.inf-contact a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+/*  ----------------------------------------------PORTFOLIO PAGINA -------------------------------------------------- */
+
+.intro a {
+  color: #dfff00;
+  border-bottom: 1px solid #dfff00;
+  text-decoration: none;
+  text-transform: none;
+}
+
+
+.intro a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  transition: 1s ease;
+}
+
+#carousel { 
+  margin-bottom: 4em;
+}
+
+.UnderNavbar h2 {
+  margin-bottom: 1em;
+}
+
+.facts {
+  list-style: none;
+}
+
+.facts ul {
+  padding: 0;
+  margin: 0;
+  padding-right: 20px;
+  list-style-type: square; 
+}
+
+.facts h4 {
+  font-family: Gothambold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size:  1em;
+  font-weight: 700;
+}
+
+.facts.cols3 > li {
+  float: left;
+  /* width: 220px; */
+  width: 33%;
+}
+
+.content-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-container a:hover {
+  color: #f8ef54;
+}
+
+.content-container ul li {
+  margin-bottom: 0.2em;
+  font-family: GothamMedium;
+  font-style: bolder;
+}
+
+.Project-intro a {
+  color: #dfff00;
+  text-transform: none;
+  border-bottom: 1px solid #dfff00;
+}
+
+.Project-intro a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  transition: 0.5s ease;
+}
+
+.error {
+  color: red;
+  margin-left: 1.4em;
+}
+
+.succes {
+  color: lightgreen;
+  margin-left: 1.4em;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  html,
+  body {
+    height: auto;
+  }
+
+
+  hr {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 100%;
+  }
+
+  .Headerlogo {
+    height: 10em;
+    position: absolute;
+    top: 0vw;
+    left: -1.5em;
+  }
+
+  .Stappenplan h3 {
+    display: none;
+  }
+
+  .Texth3-Overons h2 {
+    font-size: 1.3em;
+    font-family: Gothamlight;
+    font-weight: lighter;
+    color: #fff;
+    margin-left: -0.6em;
+    text-transform: unset;
+  }
+
+  .Stagiair h1 {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .Interesse h3 {
+    color: #fff;
+    font-size: 15px;
+    font-family: Gothambold;
+    margin-left: 1em;
+  }
+
+  .Text-under-Head p {
+    color: #fff;
+    font-family: Gothamlight;
+    position: relative;
+    font-weight: bolder;
+    left: -0.5em;
+  }
+
+  .navbar-toggler {
+    margin-top: -8em;
+    position: relative;
+    right: -1.3em;
+  }
+
+  #backtotop {
+    display: none;
+  }
+
+  footer {
+    height: 100% !important;
+    width: 100%;
+  }
+
+
+  .btn {
+    background-color: #f8ef54;
+    color: #000;
+    font-family: Gothamlight;
+    width: 100%;
+  }
+
+  address {
+    color: #ffff;
+    font-size: 1.1em;
+    font-family: Gothamlight;
+    margin-left: 0vw;
+    margin: 1.3em;
+    position: relative;
+    left: -1.2em;
+  }
+
+  address a:hover {
+    text-decoration: none;
+    color: #fff;
+    transition: none;
+    border-bottom: #fff 1px solid;
+  }
+
+  form label {
+    color: #fff;
+    font-family: Gothamlight;
+    font-weight: bold;
+  }
+
+  .Footer h3 {
+    position: relative;
+    left: -0.8em;
+  }
+
+  .Footer p {
+    position: relative;
+    left: -1.3em;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #f8ef5f;
+    font-family: Gothambold;
+    font-size: 1.4em;
+    font-weight: 100;
+  }
+
+  .navbar-light .navbar-nav .nav-link:link {
+    color: #f8ef5f;
+    opacity: 1;
+  }
+
+  .navbar-light .navbar-nav .nav-link:visited {
+    color: #f8ef5f;
+    opacity: 1;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+  }
+
+  #back-to-top {
+    display: none;
+  }
+
+  .Undnav h2 {
+    position: relative;
+    top:  -0.5em;
+    font-size: 1.3em;
+    margin-bottom: 0.8em;
+  }
+
+  .opdr-intro h2 {
+    font-size: 1.5em;
+  }
+
+
+  .over-intro h2 {
+    font-size: 1.6em;
+    margin-top: 1em;
+  } 
+
+  .contact-intro {
+    position: relative;
+    left: -1em;
+  }
+  /* -----------------------------------------------CONTACT PAGINA----------------------------------------------- */
+
+  .infoPersonen h3 {
+    position: relative;
+    top: 0.5em;
+    margin-bottom: 1.5em;
+  }
+  .List {
+    margin-top: 4em;
+  }
+
+  .List h3 {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  .List a {
+    color: #f8ef54;
+  }
+
+  .List p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Gothamlight;
+    margin-bottom: 2em;
+  } 
+  
+  iframe {
+    width: 75vw;
+    border: none;
+    height: 250px;
+    padding: 0px;
+    margin-bottom: 1em;
+  }
+  .uitzichtbv img {
+    display: none;
+  }
+
+/* -----------------------------------------PORT PAG-------------------------------------------- */
+
+
+     .intro {
+          width: 450px;
+          font-size: 1.2em;
+          line-height: 1.2em;
+          font-weight: 200;
+          margin-top: 1em;
+        }
+      
+        .intro p {
+          font-family: Gothamthin;
+          font-weight: lighter;
+          z-index: 500;
+        }
+        
+        .intro.odd {
+          float: left !important;
+          padding-right: 40px;
+        }
+        
+        article img {
+          max-width: 100%;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          position: relative;
+        }
+        
+        .intro h2 {
+          font-family: Gothambold;
+        }
+
+        .facts li {
+          margin-bottom: 1em;
+        }
+
+        /*
+        .facts.cols3 img {
+          margin-right: 5em;
+        } */ 
+
+        .UnderNavbar h2 {
+          font-size: 1.4em;
+          margin-bottom: 1em;
+          font-weight: 2;
+        }
+
+        h4 {
+          font-size: 1.4em;
+        }
+}
+
+@media (min-width: 481px) and (max-width: 575px) {
+  html,
+  body {
+    height: 100% !important;
+  }
+
+  .Headerlogo {
+    height: 13em;
+    position: absolute;
+    top: -1em;
+    left: -1.5em;
+  }
+
+  .Stappenplan h3 { 
+    display: none;
+  } 
+
+hr {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 100%;
+  }
+
+  .infoPersonen h3 {
+    position: relative;
+    top: 0.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .navbar-toggler {
+    margin-top: -7em;
+    position: relative;
+    right: -1.2em;
+
+  }
+  .Text-under-Head p {
+    color: #fff;
+    font-family: lol;
+    position: relative;
+    left: 0vw;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  address {
+    color: #ffff;
+    font-size: 1.1em;
+    font-family: Gothamlight;
+    margin-left: 0vw;
+    margin: 1.3em;
+    position: relative;
+    left: -1.2em;
+  }
+
+  address a:hover {
+    text-decoration: none;
+    color: #fff;
+    transition: none;
+    border-bottom: #fff 1px solid;
+  }
+
+  .btn {
+    background-color: #f8ef54;
+    color: #000;
+    font-family: Gothamlight;
+    width: 250px;
+    align-content: center;
+  }
+
+  form label {
+    color: #fff;
+    font-family: Gothamlight;
+    font-weight: bold;
+  }
+
+
+  .Footer h3 {
+    position: relative;
+    left: -0.8em;
+  }
+  .Footer p {
+    position: relative;
+    left: -1.3em;
+  }
+
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #f8ef5f;
+    font-family: Gothambold;
+    font-size: 1.4em;
+    font-weight: 100;
+  }
+
+  .navbar-light .navbar-nav .nav-link:link {
+    color: #f8ef5f;
+    opacity: 1;
+  }
+
+  .navbar-light .navbar-nav .nav-link:visited {
+    color: #f8ef5f;
+    opacity: 1;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+  }
+
+  button {
+    background-color: yellow;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    font-size: 1.3em;
+  }
+
+  #backtotop {
+    display: none;
+  }
+
+  .Stagiair h1 {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .Interesse h3 {
+    color: #fff;
+    font-size: 15px;
+    font-family: Gothambold;
+    margin-left: 1em;
+  }
+
+  .Undnav h2 {
+    position: relative;
+    top:  -0.5em;
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+  }
+
+  .opdr-intro h2 {
+    font-size: 1.5em;
+  }
+
+  .over-intro h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+  } 
+
+  .contact-intro {
+    position: relative;
+    left: -1em;
+  }
+
+  .Footer button {
+    width: 100%;
+  }
+
+  /* ---------------------------------------------CONTACT PAGINA----------------------------------- */
+
+  iframe {
+    width: 85vw;
+    border: none;
+    zoom: none;
+    height: 250px;
+    padding: 0px;
+  } 
+  .uitzichtbv img {
+    position: absolute;
+    right: 3em;
+    top: 17em;
+    height: 12em;
+    display: none;
+  }
+
+  .List {
+    margin-top: 3em;
+  }
+
+  .List h3 {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 2em;
+  }
+ 
+  .List p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Gothamlight;
+    margin-top: 0.3em;
+  }
+
+        /* -----------------------------------------PORT PAG-------------------------------------------- */
+
+
+        .intro {
+          width: 450px;
+          font-size: 1.2em;
+          line-height: 1.2em;
+          font-weight: 200;
+        }
+      
+        .intro p {
+          font-family: Gothamthin;
+          font-weight: lighter;
+        }
+        
+        .intro.odd {
+          float: left !important;
+          padding-right: 40px;
+        }
+        
+        article img {
+          max-width: 100%;
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+        
+        .intro h2 {
+          font-family: Gothambold;
+        }
+
+        .facts li {
+          margin-bottom: 1em;
+        }
+          
+        .port-intro h2 {
+          font-size: 2.3em; 
+          margin-bottom: 1em;
+          width: 80%;
+        }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar-toggler {
+    margin-top: -7em;
+    position: relative;
+    right: -1.2em;
+  }
+
+  .infoPersonen h3 {
+    position: relative;
+    top: 0.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .Stappenplan h3 {
+    display: none;
+  }
+
+  hr {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 100%;
+  }
+  .Headerlogo {
+    height: 13em;
+    position: absolute; 
+    top: -1em;
+    left: 1em;
+  }
+
+  .Stappenplan hr {
+    margin-bottom: 2em;
+  }
+  
+  .Stappenplan hr {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 91%;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  address {
+    color: #fff;
+    font-size: 1.1em;
+    font-family: Gothamlight;
+    margin-left: 0vw;
+    margin: 1.3em;
+  }
+
+  address a:hover {
+    text-decoration: none;
+    color: #fff; 
+    transition: none;
+    border-bottom: #fff 1px solid;
+  }
+
+  .btn {
+    margin-left: 13.8em;
+    background-color: #f8ef54;
+    color: #000;
+    font-family: Gothamlight;
+    width: 250px;
+  }
+
+  form {
+    margin-left: 1.5em;
+  }
+
+  form label {
+    font-family: Gothamlight;
+    font-weight: bold;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #f8ef5f;
+    font-family: Gothambold;
+    font-size: 1.1em;
+  }
+
+  .navbar-light .navbar-nav .nav-link:link {
+    color: #f8ef5f;
+    opacity: 1;
+    border-bottom: transparent 3px solid;
+  }
+
+  .navbar-light .navbar-nav .nav-link:visited {
+    color: #f8ef5f;
+    opacity: 1;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+  }
+
+  #backtotop {
+    display: none;
+  }
+
+  .UndDesk {
+    display: none;
+  }
+
+  .Texth3-Overons h2 {
+    font-family: Gothamlight;
+    font-size: 1.3em;
+    font-weight: lighter;
+    margin-left: -0.8em;
+  }
+
+  .Interesse h3 {
+    color: #fff;
+    font-size: 15px;
+    font-family: Gothambold;
+    margin-left: 0em;
+  }
+
+  .Stagiair h1 {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .Undnav h2 {
+    position: relative;
+    top:  -0.5em;
+    font-size: 1.7em;
+    margin-bottom: 0.8em;
+  }
+
+  .Stappenplan hr {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 100%;
+  }
+  
+  .opdr-intro h2 {
+  font-size: 1.9em;
+  }
+
+  .over-intro h2 {
+    font-size: 1.7em;
+    margin-top: 1em;
+  } 
+
+  .contact-intro {
+    position: relative;
+    left: -1em;
+  }
+
+  textarea.form-control {
+    width: 15.3em;
+  }
+
+  .Footer button {
+    width: 15.3em;
+  }
+
+  /* ---------------------------------------------------CONTACT PAGINA------------------------------------ */
+
+  .List {
+    margin-top: 3em;
+  }
+
+  .List h3 {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 2em;
+  }
+
+  .List p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Gothamlight;
+    margin-top: 0.3em;
+  }
+
+  .uitzichtbv img {
+    display: none;
+  }
+
+  iframe {
+    width: 75vw;
+    border: none;
+    zoom: none;
+    height: 250px;
+    padding: 0px;
+    margin-bottom: 1em;
+  } 
+
+      /* -----------------------------------------PORT PAG-------------------------------------------- */
+
+
+      .intro {
+        width: 100%;
+        font-size: 1em;
+        line-height: 1.2em;
+        font-weight: 200;
+        margin-top: 1em;
+        float: left;
+      }
+    
+      .intro p {
+        font-family: Gothamthin;
+        font-weight: lighter;
+      }
+      
+      .intro.odd {
+        float: left !important;
+        padding-right: 50px;
+      }
+      
+      article img {
+        max-width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      
+      .intro h2 {
+        font-family: Gothambold;
+    
+      }
+
+      .facts li {
+        margin-right: 3em;
+        margin-bottom: 1em;
+      }
+
+      .port-intro h2 {
+        position: relative;
+        left: -2.4em;
+        font-size: 2.3em; 
+        margin-bottom: 1em;
+      }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    background: #008c9a url(../images/driehoek-bg.png) no-repeat bottom right;
+    overflow-y: scroll;
+  }
+
+  .Headerlogo {
+    height: 13em;
+    position: absolute;
+    top: 0em;
+    left: 2em;
+  }
+  .infoPersonen h3 {
+    position: relative;
+    top: 0.5em;
+    margin-bottom: 1.5em;
+  }
+
+  hr {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 100%;
+  }
+  .Stappenplan h3 {
+    display: none;
+  }
+
+  .navbar-toggler {
+    margin-top: -5.5em;
+  }
+
+  address {
+    color: #fff;
+    font-family: Gothamlight;
+    margin-left: 0vw;
+    margin-left: 1.45em;
+  }
+
+  address a:hover {
+    text-decoration: none;
+    color: #fff;
+    transition: none;
+    border-bottom: #fff 1px solid;
+  }
+
+  .btn {
+    margin-left: 13.8em;
+    background-color: #f8ef54;
+    color: #000;
+    font-family: Gothamlight;
+    width: 250px;
+  }
+
+  form {
+    margin-left: 1.3em;
+  }
+
+  form label {
+    font-family: Gothamlight;
+    font-weight: bold;
+  }
+
+  footer {
+    background: #000 url(../images/driehoek-bg.png) no-repeat bottom right;
+    height: auto;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #f8ef5f;
+    font-family: Gothambold;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+
+  .navbar-light .navbar-nav .nav-link:link {
+    color: #f8ef5f;
+    opacity: 1;
+    border-bottom: transparent 3px solid;
+  }
+
+  .navbar-light .navbar-nav .nav-link:visited {
+    color: #f8ef5f;
+    opacity: 1;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+  }
+
+  .UndDesk {
+    display: none;
+  }
+
+  .Text-under-Head p {
+    color: #fff;
+    font-family: Gothamlight;
+    font-weight: bold;
+    position: relative;
+    left: -0.7em;
+  }
+
+  .Stagiair h1 {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .Interesse h3 {
+    color: #fff;
+    font-size: 15px;
+    font-family: Gothambold;
+    margin-left: 1em;
+  }
+
+  .Undnav h2 {
+    position: relative;
+    top:  -0.5em;
+    font-size: 2.1em;
+    margin-bottom: 0.8em;
+  }
+
+  .opdr-intro {
+    position: relative;
+    left: -4.7em;
+  }
+
+  .contact-intro {
+    position: relative;
+    left: -3em;
+  }
+
+  textarea.form-control {
+    width: 14em;
+  }
+
+  .Footer button {
+    width: 14em;
+  }
+
+   /* ---------------------------------------------------CONTACT PAGINA------------------------------------ */
+
+     iframe {
+    width: 70vw;
+    border: none;
+    height: 300px;
+    padding: 0px;
+    position: relative;
+    left: -1.8em;
+    margin-bottom: 2em;
+  }
+
+  .List p {
+    position: relative;
+    left: -1.6em;
+    text-transform: none;
+  }
+  .uitzichtbv img {
+    position: absolute;
+    right: 3em;
+    top: 20em;
+    height: 12em;
+  }
+
+  .List {
+    margin-top: 3em;
+  }
+
+  .List h3 {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    left: -2em;
+    margin-bottom: 1em;
+  }
+
+  .List p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Gothamlight;
+    margin-bottom: 3em;
+  }
+
+
+      /* -----------------------------------------PORT PAG-------------------------------------------- */
+
+
+  .intro {
+     width: 450px;
+     font-size: 1.2em;
+     line-height: 1.2em;
+     font-weight: 200;
+  }
+    
+  .intro p {
+     font-family: Gothamthin;
+     font-weight: lighter;
+  }
+      
+  .intro.odd {
+     float: left !important;
+     padding-right: 40px;
+  }
+      
+  article img {
+     max-width: 100%;
+     margin-top: 50px;
+     margin-bottom: 50px;
+  }
+      
+  .intro h2 {
+     font-family: Gothambold;
+  }
+
+  .port-intro h2 {
+    position: relative;
+    left: -4.8em;
+    font-size: 2.3em; 
+    margin-bottom: 1em;
+  }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  body {
+    background: #008c9a url(../images/driehoek-bg.png) no-repeat bottom right;
+  }
+
+  .Headerlogo {
+    height: 13em;
+    position: absolute;
+    top: 2em;
+  }
+
+  .lineUnderHead {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 89%;
+    
+  }
+
+  .Stappenplan hr {
+    margin-bottom: 2em;
+  }
+  
+  .Stappenplan hr {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 89%;
+  }
+
+  .fases {
+    position: relative;
+    left: -3em;
+  }
+
+  .navbar-toggler {
+    margin-top: -5.5em;
+  }
+
+  address {
+    color: #fff;
+    font-family: Gothamlight;
+    margin-left: 0vw;
+    margin-left: 1.45em;
+  }
+
+  address a:hover {
+    text-decoration: none;
+    color: #fff; 
+    transition: none;
+    border-bottom: #fff 1px solid;
+  }
+
+  .btn {
+    margin-left: 13.8em;
+    background-color: #f8ef54;
+    color: #000;
+    font-family: Gothamlight;
+    width: 250px;
+  }
+
+  form {
+    margin-left: 1.3em;
+  }
+
+  form label {
+    font-family: Gothamlight;
+    font-weight: bold;
+  }
+
+  footer {
+    background: #000 url(../images/driehoek-bg.png) no-repeat bottom right;
+    height: auto;
+  }
+
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #f8ef5f;
+    font-family: Gothambold;
+    margin: 0.8em;
+    padding: 0.2em;
+    position: relative;
+    left: 2.6em;
+    font-size: 1.1em;
+  }
+
+
+  .navbar-light .navbar-nav .nav-link:link {
+    color: #f8ef5f;
+    opacity: 1;
+    border-bottom: transparent 3px solid;
+  }
+
+  .navbar-light .navbar-nav .nav-link:visited {
+    color: #f8ef5f;
+    opacity: 1;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+  }
+
+  .Texth3-Overons h2 {
+    color: #fff;
+    font-family: Gothamlight;
+    font-size: 2em;
+    font-weight: lighter;
+    margin-left: -3em;
+  }
+
+
+  .Interesse h3 {
+    color: #fff;
+    font-size: 15px;
+    font-family: Gothambold;
+    margin-left: 1em;
+  }
+
+  .UndDesk {
+    font-size: 1.2em;
+  }
+
+  .infoPersonen hr {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 92%;
+  }
+
+  .recentInfo a {
+    position: relative;
+    top: 2em;
+  }
+
+  .Undnav h2 {
+    position: relative;
+    left: -0.4em;
+    top:  -0.5em;
+    font-size: 2.1em;
+    margin-bottom: 0.8em;
+  }
+
+  .Stappenplan hr {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 100%;
+  }
+
+  .opdr-intro {
+    position: relative;
+    left: 0.8em;
+  }
+
+  .contact-intro {
+    position: relative;
+    left: -0.3em;
+  }
+
+  textarea.form-control {
+    width: 14.2em;
+  }
+
+  .Footer button {
+    width: 14.15em;
+  }
+   /* ---------------------------------------------------CONTACT PAGINA------------------------------------ */
+
+
+  .uitzichtbv img {
+    position: absolute;
+    right: 10em;
+  }
+
+  .List {
+    position: relative;
+    left: -3.6em;
+    top: 2em;
+    margin-bottom: 3em;
+  }
+
+  .List h3 {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 3em;
+  }
+
+  .List p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Gothamlight;
+    margin-bottom: 2em;
+  } 
+
+
+  .LastInfo h3 {
+    margin-left: 2.6em;
+    float: left;
+  }
+
+  .LastInfo p {
+     margin-left: -2.2em;
+  }
+
+  iframe {
+    width: 70vw;
+    border: none;
+    height: 300px;
+    padding: 0px;
+    margin-bottom: 2em;
+  }
+
+    /* -----------------------------------------PORT PAG-------------------------------------------- */
+
+
+    .intro {
+      width: 450px;
+      font-size: 1.7em;
+      line-height: 1.2em;
+      font-weight: 200;
+    }
+  
+    .intro p {
+      font-family: Gothamthin;
+      font-weight: lighter;
+    }
+    
+    .intro.odd {
+      float: left !important;
+      padding-right: 40px;
+    }
+    
+    article img {
+      max-width: 80%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    
+    .intro h2 {
+      font-family: Gothambold;
+  
+    }
+    .content-container {
+      margin-left: 13em;
+    }
+
+    h4 {
+      font-size: 1.6em;
+      font-weight: Gothamthin;
+      font-weight: 1;
+      margin-left: 0.5em;
+    }
+
+    .port-intro h2 {
+      position: relative;
+      left: -3.6em;
+      font-size: 2em;
+    }
+
+  }
+
+
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .Headerlogo {
+    height: 13em;
+    position: absolute;
+    top: 2em;
+  }
+  .fases {
+    position: relative;
+    left: -3em;
+  }
+
+  .lineUnderHead {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 89%;
+  }
+
+  .Stappenplan hr {
+    margin-bottom: 2em;
+  }
+  
+  .Stappenplan hr {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 89%;
+  }
+
+  .Texth3-Overons h2 {
+    color: #fff;
+    font-family: Gothamlight;
+    font-size: 2em;
+    font-weight: lighter;
+    margin-left: -3em;
+  }
+
+  address {
+    color: #fff;
+    font-family: Gothamlight;
+    float: right;
+    padding: 1em;
+    position: relative;
+    right: 15em;
+    font-size: 1.1em;
+  }
+
+  .btn {
+    margin-left: 13.7em;
+    background-color: #f8ef54;
+    color: #000;
+    font-family: Gothamlight;
+    width: 250px;
+  }
+
+  body {
+    background: #008c9a url(../images/driehoek-bg.png) no-repeat bottom right;
+  }
+
+  footer {
+    background: #000 url(../images/driehoek-bg.png) no-repeat bottom right;
+    height: auto;
+  }
+
+  form {
+    margin-left: 1.5em;
+  }
+
+  form label {
+    font-family: Gothamlight;
+    font-weight: bold;
+  }
+  
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #f8ef5f;
+    font-family: Gothambold;
+    margin: 0.8em;
+    padding: 0.2em;
+    position: relative;
+    left: 2.2em;
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+
+  .navbar-light .navbar-nav .nav-link:link {
+    color: #f8ef5f;
+    opacity: 1;
+    border-bottom: transparent 3px solid;
+  }
+
+  .navbar-light .navbar-nav .nav-link:visited {
+    color: #f8ef5f;
+    opacity: 1;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+  }
+
+  .UndDesk {
+    font-size: 1.2em;
+  }
+
+  .Interesse h3 {
+    color: #fff;
+    font-size: 15px;
+    font-family: Gothambold;
+    margin-left: 1em;
+  }
+
+  .infoPersonen hr {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 92%;
+  }
+
+  .recentInfo h3 {
+    position: relative;
+    top: 2em;
+  }
+
+  .Undnav h2 {
+    position: relative;
+    left: -0.4em;
+    top:  -0.5em;
+    font-size: 2.1em;
+    margin-bottom: 0.8em;
+  }
+
+  .opdr-intro {
+    position: relative;
+    left: 0.3em;
+  }
+
+  .contact-intro {
+    position: relative;
+    left: -0.6em;
+  }
+
+  textarea.form-control {
+    width: 14.2em;
+  }
+
+  .Footer button {
+    width: 14.15em;
+  }
+
+  /* ---------------------------------------------------CONTACT PAGINA------------------------------------ */
+
+  
+
+  .uitzichtbv img {
+    position: absolute;
+    right: 10em;
+  }
+
+  .LastInfo h3 {
+    margin-left: 2.7em;
+    float: left;
+  }
+
+  .LastInfo p {
+     margin-left: -2.2em;
+  }
+
+  .List {
+    position: relative;
+    left: -3.6em;
+    top: 2em;
+    margin-bottom: 3em;
+  }
+
+  .List h3 {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 3em;
+  }
+
+  .List p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Gothamlight;
+    margin-bottom: 2em;
+  } 
+
+  iframe {
+    width: 70vw;
+    border: none;
+    height: 300px;
+    padding: 0px;
+    margin-bottom: 2em;
+  }
+
+    /* -----------------------------------------PORT PAG-------------------------------------------- */
+
+
+    .intro {
+      width: 450px;
+      font-size: 1.7em;
+      line-height: 1.2em;
+      font-weight: 200;
+    }
+  
+    .intro p {
+      font-family: Gothamthin;
+      font-weight: lighter;
+    }
+    
+    .intro.odd {
+      float: left !important;
+      padding-right: 40px;
+    }
+    
+    article img {
+      max-width: 80%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    
+    .intro h2 {
+      font-family: Gothambold;
+    }
+
+    .content-container {
+      margin-left: 13em;
+    }
+
+    h4 {
+      font-size: 1.6em;
+      font-weight: Gothamthin;
+      font-weight: 1;
+      margin-left: 0.5em;
+    }
+
+    .port-intro h2 {
+      position: relative;
+      left: -4em;
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+
+}
+
+@media (min-width: 1200px) {
+  .Headerlogo {
+    height: 14em;
+    position: absolute;
+    top: 1.4em;
+    padding: 1.5em;
+    margin: 2px;
+    margin-left: 1em;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #f8ef5f;
+    font-family: Gothambold;
+    margin: 0.8em;
+    padding: 0.2em;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  .Stappenplan hr {
+    margin-bottom: 2em;
+  }
+  
+  .Stappenplan hr {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 89%;
+  }
+
+  .lineUnderHead {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 89%;
+  }
+
+  .navbar-light .navbar-nav .nav-link:link {
+    color: #f8ef5f;
+    opacity: 1;
+    border-bottom: transparent 3px solid;
+  }
+
+  .navbar-light .navbar-nav .nav-link:visited {
+    color: #f8ef5f;
+    opacity: 1;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+  }
+
+  .Texth3-Overons h2 {
+    color: #fff;
+    font-family: Gothamlight;
+    font-size: 2em;
+    font-weight: lighter;
+    margin-left: -3em;
+  }
+
+  address {
+    color: #fff;
+    font-family: Gothamlight;
+    float: right;
+    padding: 1em;
+    position: relative;
+    right: 23em;
+    font-size: 1.1em;
+  }
+
+  .btn { 
+    margin-left: 13.7em;
+    background-color: #f8ef54;
+    color: #000;
+    font-family: Gothamlight;
+    width: 250px;
+  }
+
+  body {
+    background: #008c9a url(../images/driehoek-bg.png) no-repeat bottom right;
+  }
+
+  footer {
+    background: #000 url(../images/driehoek-bg.png) no-repeat bottom right;
+    height: auto;
+  }
+
+  form {
+    margin-left: 1.5em;
+  }
+
+  form label {
+    font-family: GotHamlight;
+    font-weight: bold;
+  }
+
+  .UndDesk {
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+  .fases {
+    position: relative;
+    left: -3em;
+  }
+
+  .Leftside h6 {
+    position: relative;
+    top: 2em;
+    font-family: Gothambold;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: -1em;
+  }
+
+  .Interesse h3 {
+    color: #fff;
+    font-size: 15px;
+    font-family: Gothambold;
+    margin-left: 1em;
+  }
+
+  .container-Info h2 {
+    position: relative;
+    top: 1em;
+  }
+
+  .infoPersonen hr {
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 92%;
+  }
+
+  .recentInfo h3 {
+    position: relative;
+    top: 2em;
+  }
+
+  .Undnav h2 {
+    position: relative;
+    left: -0.4em;
+    top:  -0.5em;
+    font-size: 2.1em;
+    margin-bottom: 0.8em;
+  }
+
+  .opdr-intro {
+    position: relative;
+    left: 0.7em;
+  }
+
+  .Footer button {
+    width: 17em;
+  }
+
+  textarea.form-control {
+    width: 17em;
+  }
+  /* -----------------------------------------PORT PAG-------------------------------------------- */
+
+
+  .intro {
+    width: 450px;
+    font-size: 1.7em;
+    line-height: 1.2em;
+  }
+
+  .intro p {
+    font-family: Gothamthin;
+    font-weight: lighter;
+  }
+  
+  .intro.odd {
+    float: left !important;
+    padding-right: 40px;
+  }
+  
+  article img {
+    max-width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .intro h2 {
+    font-family: Gothambold;
+
+  }
+
+  .UnderNavbar h2 {
+    margin-left: 4em;
+    font-size: 2.4em;
+    margin-bottom: 1em;
+    font-weight: 2;
+  }
+
+  .content-container {
+    margin-left: 16em;
+  }
+
+  .content-container ul li {
+    line-height: em;
+    font-family: GothamMedium;
+    font-style: none;
+  }
+
+  h4 {
+    margin-left: 0.5em;
+  }
+
+  .port-intro h2 {
+    position: relative;
+    left: -3.6em;
+    font-size: 2.3em; 
+    margin-bottom: 1em;
+  }
+
+  /* -----------------------------------------CONTACT PAGINA-------------------------------------------- */
+  
+  .LastInfo h3 {
+    margin-left: 3em;
+  }
+
+  .LastInfo p {
+    margin-left: -2.5em;
+  }
+
+  .uitzichtbv img {
+    position: absolute;
+    right: 20em;
+  }
+
+  .List {
+    position: relative;
+    left: -3.6em;
+    top: 2em;
+    margin-bottom: 3em;
+  }
+
+  .List h3 {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 3em;
+  }
+
+
+  .List p {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Gothamlight;
+    margin-bottom: 3em;
+    text-transform: none;
+  }
+
+  iframe { 
+    width: 70vw;
+    border: none;
+    height: 300px;
+    position: relative;
+    left: 0.8em;
+    padding: 0px;
+    margin-bottom: 2em;
+  }
+
+  .lijntjes {
+    width: 100%;
+  }
+
+  .over-intro h2 {
+    position: relative;
+    left: 0.3em;
+  }
+
+}
