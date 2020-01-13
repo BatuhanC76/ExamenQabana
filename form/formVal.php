@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $bedrijf = $naam = $telefoon = $email = $bericht = "";
       } else {
         echo "FAIL";
-      }
+      } 
 } 
 
 

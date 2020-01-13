@@ -583,6 +583,13 @@ address span {
     height: auto;
   }
 
+  .error { 
+    margin-left: 0em;
+  }
+
+  .succes {
+    margin-left: 0em;
+  }
 
   hr {
     border-bottom: 1px solid #fff;
@@ -832,6 +839,14 @@ address span {
   html,
   body {
     height: 100% !important;
+  }
+
+  .error { 
+    margin-left: 0em;
+  }
+
+  .succes {
+    margin-left: 0em;
   }
 
   .Headerlogo {
