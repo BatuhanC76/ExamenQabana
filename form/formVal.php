@@ -53,12 +53,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $bericht_body .= "$key: $value\n";
       }
 
-      $to = 'batucelik7676@gmail.com';
-      $subject = 'Qabana contact opnemen ';
+      $to = "batucelik7676@gmail.com,batuhan_celik766@hotmail.com,$email";
+      $subject = 'Dankjewel voor je email';
       $berichtfrom =  nl2br("Naam: " .$naam. "\n". "E-mail: " .$email. "\n". "Telefoon: " .$telefoon. "\n". "Bericht: ". "\n\n".$bericht);
       $headers = 'MIME-Version: 1.0' . "\r\n";
       $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-      $headers .= 'From: "' . $naam . '" "<'. $email . '>"' . "\r\n" .
+      $headers .= 'From: "' . $naam . '" ' . "\r\n" .
                   'Reply-To: '.  $email . "\r\n" .
                   'X-Mailer: PHP/' . phpversion();
       
@@ -67,7 +67,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $bedrijf = $naam = $telefoon = $email = $bericht = "";
       } else {
         echo "FAIL";
-      } 
+      }  
+      
 } 
 
 
