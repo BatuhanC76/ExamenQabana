@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $bericht_body .= "$key: $value\n";
       }
 
-      $to = "batucelik7676@gmail.com,batuhan_celik766@hotmail.com,$email";
+      $to = "batucelik7676@gmail.com,1041570@mborijnland.nl,$email";
       $subject = 'Dankjewel voor je email';
       $berichtfrom =  nl2br("Naam: " .$naam. "\n". "E-mail: " .$email. "\n". "Telefoon: " .$telefoon. "\n". "Bericht: ". "\n\n".$bericht);
       $headers = 'MIME-Version: 1.0' . "\r\n";
@@ -68,11 +68,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       } else {
         echo "FAIL";
       }  
-      
-} 
-
-
-      if($bedrijfErr == '' || $nameErr == '' || $telefoonErr == '' || $emailErr == '' || $berichtErr = '') {
 
         $con = new mysqli("localhost","root","","qabana") or die(mysqli_error());
 
@@ -87,9 +82,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if(!$result = $con->query($sql)){
         die('Error occured [' . $conn->error . ']');
         }
-          
-        
-        }
+}  
+
       }
       
 
