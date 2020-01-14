@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $bericht_body .= "$key: $value\n";
       }
 
-      $to = "batucelik7676@gmail.com,1041570@mborijnland.nl,$email";
+      $to = "batucelik7676@gmail.com,info@qabana.nl,$email";
       $subject = 'Dankjewel voor je email';
       $berichtfrom =  nl2br("Naam: " .$naam. "\n". "E-mail: " .$email. "\n". "Telefoon: " .$telefoon. "\n". "Bericht: ". "\n\n".$bericht);
       $headers = 'MIME-Version: 1.0' . "\r\n";
