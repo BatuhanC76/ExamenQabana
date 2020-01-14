@@ -1,4 +1,3 @@
-
 <?php include('form/formVal.php'); ?>
 <footer class="Footer">
     <div class="container">
