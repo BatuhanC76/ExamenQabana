@@ -1,4 +1,16 @@
 <?php
-mysql_connect('localhost','root','');
-mysql_select_db('qabana');
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbName = "qabana";
+
+
+// Create database connection
+$conn = new mysqli($servername, $username, $password, $dbName);
+// Check connection
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+} else {
+    echo "";
+}
 ?>
