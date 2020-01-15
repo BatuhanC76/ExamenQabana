@@ -64,11 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       
       if(mail($to, $subject, $berichtfrom, $headers)) {
         $succes =  nl2br ("Het is verzonden! \n We zullen zo snel mogelijk contact opnemen");
-        $bedrijf = $naam = $telefoon = $email = $bericht = "";
-      } else {
-        echo "FAIL";
-      }  
-
+        $bedrijf = $naam = $telefoon = $email = $bericht = "";  
+        
         $con = new mysqli("localhost","root","","qabana") or die(mysqli_error());
 
         $bedrijf = $con->real_escape_string($_POST['bedrijf']);
@@ -82,6 +79,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if(!$result = $con->query($sql)){
         die('Error occured [' . $conn->error . ']');
         }
+      } else {
+        echo "Het is niet verzonden";
+      }  
+
+      
 }  
 
       }
