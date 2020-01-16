@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $nameErr = "*Naam is Verplicht";
     } else {
       $naam = test_input($_POST["naam"]);
-      // check if name only contains letters and whitespace
+  
       if (!preg_match ("/^[a-zA-Z\-_ ’'‘ÆÐƎƏƐƔĲŊŒẞÞǷȜæðǝəɛɣĳŋœĸſßþƿȝĄƁÇĐƊĘĦĮƘŁØƠŞȘŢȚŦŲƯY̨Ƴąɓçđɗęħįƙłøơşșţțŧųưy̨ƴÁÀÂÄǍĂĀÃÅǺĄÆǼǢƁĆĊĈČÇĎḌĐƊÐÉÈĖÊËĚĔĒĘẸƎƏƐĠĜǦĞĢƔáàâäǎăāãåǻąæǽǣɓćċĉčçďḍđɗðéèėêëěĕēęẹǝəɛġĝǧğģɣĤḤĦIÍÌİÎÏǏĬĪĨĮỊĲĴĶƘĹĻŁĽĿʼNŃN̈ŇÑŅŊÓÒÔÖǑŎŌÕŐỌØǾƠŒĥḥħıíìiîïǐĭīĩįịĳĵķƙĸĺļłľŀŉńn̈ňñņŋóòôöǒŏōõőọøǿơœŔŘŖŚŜŠŞȘṢẞŤŢṬŦÞÚÙÛÜǓŬŪŨŰŮŲỤƯẂẀŴẄǷÝỲŶŸȲỸƳŹŻŽẒŕřŗſśŝšşșṣßťţṭŧþúùûüǔŭūũűůųụưẃẁŵẅƿýỳŷÿȳỹƴźżžẓ]+$/",$naam)) {
         $nameErr = "*Naam alleen maar letters";
       }
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $bericht_body .= "$key: $value\n";
       }
 
-      $to = "batucelik7676@gmail.com,$email";
+      $to = "batucelik7676@gmail.com,info@qabana.nl,$email";
       $subject = 'Dankjewel voor je email';
       $berichtfrom =  nl2br("Naam: " .$naam. "\n". "E-mail: " .$email. "\n". "Telefoon: " .$telefoon. "\n". "Bericht: ". "\n\n".$bericht);
       $headers = 'MIME-Version: 1.0' . "\r\n";
@@ -64,8 +64,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       
       if(mail($to, $subject, $berichtfrom, $headers)) {
         $succes =  nl2br("Het is verzonden! \n We zullen zo snel mogelijk contact opnemen");
-      
-        
         $con = new mysqli("localhost","root","","qabana") or die(mysqli_error());
 
         $bedrijf = $con->real_escape_string($_POST['bedrijf']);
@@ -73,9 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $telefoon = $con->real_escape_string($_POST['telefoon']);
         $email = $con->real_escape_string($_POST['email']);
         $bericht = $con->real_escape_string($_POST['bericht']);
-         //query to insert the variable data into the database
         $sql="INSERT INTO form (bedrijf, naam, telefoon, email, bericht) VALUES ('".$bedrijf."','".$naam."', '".$telefoon."', '".$email."', '".$bericht."')";
-         //Execute the query and returning a message
         if(!$result = $con->query($sql)){
         die('Error occured [' . $conn->error . ']');
         }
