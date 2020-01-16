@@ -24,19 +24,19 @@
         <br />
         <div class="form-group">
           <label>Bedrijfsnaam</label>
-          <input type="text" class="col-lg-3 col-md-4 col-sm-6" placeholder="Bedrijf" type="text" name="bedrijf" require value="<?= $bedrijf ?>" />
+          <input type="text" class="col-lg-3 col-md-4 col-sm-6" placeholder="Bedrijf" type="text" name="bedrijf" require value="<?= $bedrijf ?>"/>
         </div>
         <div class="form-group">
           <label>Naam</label>
-          <input type="text" class="col-lg-3 col-md-4 col-sm-6" placeholder="Naam" type="text" name="naam" require  value="<?= $naam ?>" />
+          <input type="text" class="col-lg-3 col-md-4 col-sm-6" placeholder="Naam" type="text" name="naam" require  value="<?= $naam ?>"/>
         </div>
         <div class="form-group">
           <label>Telefoonnummer</label>
-          <input type="text" class="col-lg-3 col-md-4 col-sm-6" placeholder="070 82 00 217" type="text" name="telefoon" require  value="<?= $telefoon ?>" />
+          <input type="text" class="col-lg-3 col-md-4 col-sm-6" placeholder="070 82 00 217" type="text" name="telefoon" require  value="<?= $telefoon ?>"/>
         </div>
         <div class="form-group">
           <label>E-mail</label>
-          <input type="text" class="col-lg-3 col-md-4 col-sm-6" placeholder="naam@email.nl" type="text" name="email" require  value="<?= $email ?>" />
+          <input type="text" class="col-lg-3 col-md-4 col-sm-6" placeholder="naam@email.nl" type="text" name="email" require  value="<?= $email ?>"/>
         </div>
         <div class="form-group">
           <label>Bericht</label>

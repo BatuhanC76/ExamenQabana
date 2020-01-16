@@ -17,8 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
       $naam = test_input($_POST["naam"]);
       // check if name only contains letters and whitespace
-      if (!preg_match("/^[a-zA-Z ]*$/",$naam)) {
-        $nameErr = "*Naam alleen maar letters en witte regels";
+      if (!preg_match ("/^[a-zA-Z\-_ ’'‘ÆÐƎƏƐƔĲŊŒẞÞǷȜæðǝəɛɣĳŋœĸſßþƿȝĄƁÇĐƊĘĦĮƘŁØƠŞȘŢȚŦŲƯY̨Ƴąɓçđɗęħįƙłøơşșţțŧųưy̨ƴÁÀÂÄǍĂĀÃÅǺĄÆǼǢƁĆĊĈČÇĎḌĐƊÐÉÈĖÊËĚĔĒĘẸƎƏƐĠĜǦĞĢƔáàâäǎăāãåǻąæǽǣɓćċĉčçďḍđɗðéèėêëěĕēęẹǝəɛġĝǧğģɣĤḤĦIÍÌİÎÏǏĬĪĨĮỊĲĴĶƘĹĻŁĽĿʼNŃN̈ŇÑŅŊÓÒÔÖǑŎŌÕŐỌØǾƠŒĥḥħıíìiîïǐĭīĩįịĳĵķƙĸĺļłľŀŉńn̈ňñņŋóòôöǒŏōõőọøǿơœŔŘŖŚŜŠŞȘṢẞŤŢṬŦÞÚÙÛÜǓŬŪŨŰŮŲỤƯẂẀŴẄǷÝỲŶŸȲỸƳŹŻŽẒŕřŗſśŝšşșṣßťţṭŧþúùûüǔŭūũűůųụưẃẁŵẅƿýỳŷÿȳỹƴźżžẓ]+$/",$naam)) {
+        $nameErr = "*Naam alleen maar letters";
       }
     }
 
@@ -47,13 +47,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if($nameErr == '' and $telefoonErr == '' and $emailErr == '') {
-      $bericht_body = '';
+      $bericht_body = ''; 
       unset($_POST['submit']);
       foreach($_POST as $key => $value) {
         $bericht_body .= "$key: $value\n";
       }
 
-      $to = "batucelik7676@gmail.com,info@qabana.nl,$email";
+      $to = "batucelik7676@gmail.com,$email";
       $subject = 'Dankjewel voor je email';
       $berichtfrom =  nl2br("Naam: " .$naam. "\n". "E-mail: " .$email. "\n". "Telefoon: " .$telefoon. "\n". "Bericht: ". "\n\n".$bericht);
       $headers = 'MIME-Version: 1.0' . "\r\n";
@@ -63,8 +63,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   'X-Mailer: PHP/' . phpversion();
       
       if(mail($to, $subject, $berichtfrom, $headers)) {
-        $succes =  nl2br ("Het is verzonden! \n We zullen zo snel mogelijk contact opnemen");
-        $bedrijf = $naam = $telefoon = $email = $bericht = "";  
+        $succes =  nl2br("Het is verzonden! \n We zullen zo snel mogelijk contact opnemen");
+      
         
         $con = new mysqli("localhost","root","","qabana") or die(mysqli_error());
 
@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Het is niet verzonden";
       }  
 
-      
+        $bedrijf = $naam = $telefoon = $email = $bericht = ""; 
 }  
 
       }

@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: ../inlog/inloggen.php');
+	exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,12 +50,43 @@
         text-align: center;
         margin-bottom: 1em;
     }
+
+    .button {
+	    text-decoration: none;
+	    float: right;
+        padding: 12px;
+        margin: 15px;
+        color: white;
+        width: 50px;
+        background-color: black;
+        transition: width .35s;
+        -webkit-transition: width .35s;
+        overflow: hidden;
+        font-family: GothamMedium;
+        color: #F8EF5F;
+    }
+
+    a:hover {
+        width: 100px;
+    }
+
+    a:hover .logout{
+        opacity: .9;
+    }
+
+    a {
+        text-decoration: none;
+    }
    
     </style>
 <head>
 
 <body>
         <h1>Ingevulde Gegevens / verstuurde Emails</h1>
+        <div class="uitloggen">
+            <a class="button" href="../inlog/logout.php">Logout</a>
+        </div>
+        
 <table>
     <tr>
         <th class="ths">id</th>
