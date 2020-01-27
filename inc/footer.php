@@ -20,7 +20,7 @@
       <span class="error"> <?= $emailErr ?></span>
       <span class="error"> <?= $berichtErr ?></span>
       <div class="succes"> <?= $succes ?></div>
-      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+      <form id="form-anchor"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>#form-anchor" method="post">
         <br />
         <div class="form-group">
           <label>Bedrijfsnaam</label>
@@ -43,10 +43,12 @@
           <textarea class="form-control" id="text" placeholder="Waar wil je het met ons over hebben ?"
             rows="7" type="text" name="bericht" require  value="<?= $bericht ?>"></textarea>
         </div>
+        <a href="#form-anchor">
         <div class="form-group">
           <button  type="submit" name="submit" data-submit="..Sending" class="btn btn-outline-warning">
             Verstuur naar Qabana
           </button>
+        </a>
         </div>
       </form>
     </div>
