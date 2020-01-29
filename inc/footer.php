@@ -19,9 +19,11 @@
       <span class="error"> <?= $telefoonErr ?></span>
       <span class="error"> <?= $emailErr ?></span>
       <span class="error"> <?= $berichtErr ?></span>
+      <span class="error"> <?= $captchaErr ?></span>
       <div class="succes"> <?= $succes ?></div>
       <form id="form-anchor"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>#form-anchor" method="post">
-        <br />
+        <br />    
+        
         <div class="form-group">
           <label>Bedrijfsnaam</label>
           <input type="text" class="col-lg-3 col-md-4 col-sm-6" placeholder="Bedrijf" type="text" name="bedrijf" require value="<?= $bedrijf ?>"/>
@@ -43,15 +45,17 @@
           <textarea class="form-control" id="text" placeholder="Waar wil je het met ons over hebben ?"
             rows="7" type="text" name="bericht" require  value="<?= $bericht ?>"></textarea>
         </div>
-        <a href="#form-anchor">
-        <div class="form-group">
+       <div class="form-group"> 
+         <a href="#form-anchor">
           <button  type="submit" name="submit" data-submit="..Sending" class="btn btn-outline-warning">
             Verstuur naar Qabana
           </button>
         </a>
         </div>
-      </form>
+        <div class="g-recaptcha" data-sitekey="6LcGltMUAAAAAL-8Kscap5mQ2FX-OHrjgcSAUcVO"></div>
+      </form><script src='https://www.google.com/recaptcha/api.js'></script>
     </div>
+     
   </footer>  
   <script src="vendor/jquery/jquery.scroll.js"></script>
   <script src="vendor/jquery/jquery.slim.min.js"></script>
